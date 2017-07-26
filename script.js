@@ -40,7 +40,7 @@ var booksdb = [ // no books list source provided, using an arbitrary books json 
         'genre' : 'biography',
         'published' : '2014'
     }
-]
+];
 
 
 
@@ -53,15 +53,15 @@ function Book(genre, title, author, published) {
 
 Book.prototype.hasMovie = function() {
     return false; // what do?
-}
+};
 
 Book.prototype.display = function() {
     console.log(this);
-}
+};
 
 Book.prototype.toString = function() {
     return `"${this.title}", a ${this.genre} book by ${this.author} published in ${this.published}`;
-}
+};
 
 function makeBooksList(list) {
     let n_bookslist = [];
